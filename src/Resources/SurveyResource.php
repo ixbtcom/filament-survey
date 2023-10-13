@@ -4,7 +4,7 @@ namespace Tapp\FilamentSurvey\Resources;
 
 use Filament\Forms;
 use Filament\Forms\Form;
-use Filament\Resources\Concerns\Translatable;
+
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Actions\Action;
@@ -17,7 +17,7 @@ use Tapp\FilamentSurvey\Resources\SurveyResource\Widgets\Questions;
 
 class SurveyResource extends Resource
 {
-    use Translatable;
+
 
     protected static ?string $model = Survey::class;
 
@@ -46,10 +46,7 @@ class SurveyResource extends Resource
         return __('filament-survey::filament-survey.navigation.survey.plural-label');
     }
 
-    public static function getTranslatableLocales(): array
-    {
-        return array_keys(config('filament-survey.languages'));
-    }
+
 
     public static function form(Form $form): Form
     {

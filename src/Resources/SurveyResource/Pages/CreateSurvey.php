@@ -8,7 +8,7 @@ use Tapp\FilamentSurvey\Resources\SurveyResource;
 
 class CreateSurvey extends CreateRecord
 {
-    use CreateRecord\Concerns\Translatable;
+
 
     protected static string $resource = SurveyResource::class;
 

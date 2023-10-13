@@ -9,7 +9,7 @@ use Tapp\FilamentSurvey\Resources\SectionResource;
 
 class ListSections extends ListRecords
 {
-    use ListRecords\Concerns\Translatable;
+
 
     protected static string $resource = SectionResource::class;
 

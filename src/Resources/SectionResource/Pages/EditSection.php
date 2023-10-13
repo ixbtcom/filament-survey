@@ -8,7 +8,7 @@ use Tapp\FilamentSurvey\Resources\SectionResource;
 
 class EditSection extends EditRecord
 {
-    use EditRecord\Concerns\Translatable;
+
 
     protected static string $resource = SectionResource::class;
 
